@@ -1,0 +1,35 @@
+{
+  "name": "openapi-utils-defaults",
+  "version": "0.0.1",
+  "description": "Defaults api parts into an openapi definition",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape test/test-*.js"
+  },
+  "author": "Ronald Luitwieler",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "json-schema-ref-parser": "^3.1.2",
+    "lodash.defaultsdeep": "^4.6.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orangewise/openapi-utils-defaults.git"
+  },
+  "keywords": [
+    "openapi",
+    "merge",
+    "defaults"
+  ],
+  "bugs": {
+    "url": "https://github.com/orangewise/openapi-utils-defaults/issues"
+  },
+  "homepage": "https://github.com/orangewise/openapi-utils-defaults#readme"
+}
