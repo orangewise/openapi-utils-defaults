@@ -6,6 +6,9 @@
   "scripts": {
     "test": "standard && tape test/test-*.js"
   },
+  "bin": {
+    "openapi-utils-defaults": "bin/openapi-utils-defaults"
+  },
   "author": "Ronald Luitwieler",
   "license": "ISC",
   "devDependencies": {
@@ -14,7 +17,8 @@
   },
   "dependencies": {
     "json-schema-ref-parser": "^3.1.2",
-    "lodash.defaultsdeep": "^4.6.0"
+    "lodash.defaultsdeep": "^4.6.0",
+    "minimist": "^1.2.0"
   },
   "directories": {
     "test": "test"

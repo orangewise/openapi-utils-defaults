@@ -1,0 +1,6 @@
+
+Usage: openapi-utils-defaults -s path-to-x-127.yaml -t path-to-api.yaml > path-to-result-api.json
+
+  Default the values of the source x-127 yaml into the target api.yaml.
+  The command outputs the result as json which can be piped into a new file.
+
