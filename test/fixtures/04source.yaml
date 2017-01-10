@@ -1,0 +1,24 @@
+x-a127-services:
+  - name: add-cors
+    provider: x-cors
+    options:
+      displayName: Add CORS
+      includeInErrorResponse: true
+      headers:
+        Access-Control-Allow-Origin:
+          type: string
+          default: "*"
+        Access-Control-Allow-Credentials:
+          type: boolean
+          default: true
+        Access-Control-Allow-Headers:
+          type: array
+          collectionFormat: csv
+          default: origin, x-requested-with, accept, x-authcode, x-authstate
+        Access-Control-Allow-Methods:
+          type: array
+          collectionFormat: csv
+          default: GET, PUT, POST, DELETE
+        Access-Control-Max-Age:
+          type: integer
+          default: 3628800

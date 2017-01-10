@@ -1,0 +1,13 @@
+version: 1.0
+x-a127-services:
+  - name: add-cors
+    provider: x-cors
+    options:
+      displayName: Add CORS
+      includeInErrorResponse: true
+      headers:
+        Access-Control-Allow-Methods:
+          type: array
+          collectionFormat: csv
+          # Overwrite allowed methods
+          default: GET, PUT, POST
