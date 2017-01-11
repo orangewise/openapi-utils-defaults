@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 var defaults = require('../.')
 var cli = require('../lib/cli')
-var util = require('util')
 
 var opts = cli.parse()
 
@@ -11,7 +10,7 @@ if (opts) {
       console.log(e)
       process.exit(1)
     } else {
-      console.log(util.inspect(r, false, null))
+      console.log(JSON.stringify(r))
     }
   })  
 }
