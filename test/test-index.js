@@ -49,3 +49,15 @@ test('defaults 04: overwrite a nested key (method)', function (t) {
       t.end()
     })
 })
+
+test('README example', function (t) {
+  defaults.apiDefaults(
+    join(__dirname, 'fixtures/READMEtarget.yaml'),
+    join(__dirname, 'fixtures/READMEsource.yaml'),
+    function (e, r) {
+      t.equal(e, null, 'no errors found')
+      var expected = require(join(__dirname, 'fixtures/READMEresult.json'))
+      t.deepEqual(r, expected, 'merge succeeded')
+      t.end()
+    })
+})

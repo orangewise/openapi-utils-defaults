@@ -1,0 +1,18 @@
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: openapi example
+basePath: /v1
+paths:
+  /pets:
+x-a127-services:
+  - name: add-cors
+    provider: x-cors
+    options:
+      displayName: Add CORS
+      includeInErrorResponse: true
+      headers:
+        Access-Control-Allow-Methods:
+          type: array
+          collectionFormat: csv
+          default: GET
