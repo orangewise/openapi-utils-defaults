@@ -18,6 +18,9 @@
   "dependencies": {
     "json-schema-ref-parser": "^3.1.2",
     "lodash.defaultsdeep": "^4.6.0",
+    "lodash.find": "^4.6.0",
+    "lodash.findindex": "^4.6.0",
+    "lodash.isequal": "^4.5.0",
     "minimist": "^1.2.0"
   },
   "directories": {

@@ -27,6 +27,19 @@
           }
         }
       }
+    },
+    {
+      "name": "spikeArrestDefault",
+      "provider": "volos-spikearrest-memory",
+      "apply": {
+        "endPoint": "proxy",
+        "pipe": "request"
+      },
+      "options": {
+        "allow": 50,
+        "bufferSize": 0,
+        "timeUnit": "second"
+      }
     }
   ]
 }

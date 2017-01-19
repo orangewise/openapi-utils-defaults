@@ -12,3 +12,12 @@ x-a127-services:
           type: array
           collectionFormat: csv
           default: GET, PUT, POST, DELETE
+  - name: spikeArrestDefault
+    provider: volos-spikearrest-memory
+    apply:
+      pipe: request
+      endPoint: proxy
+    options:
+      timeUnit: "second"
+      bufferSize: 0
+      allow: 50

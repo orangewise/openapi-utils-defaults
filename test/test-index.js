@@ -50,6 +50,18 @@ test('defaults 04: overwrite a nested key (method)', function (t) {
     })
 })
 
+test('defaults 05: target has more elements than source', function (t) {
+  defaults.apiDefaults(
+    join(__dirname, 'fixtures/05target.yaml'),
+    join(__dirname, 'fixtures/05source.yaml'),
+    function (e, r) {
+      t.equal(e, null, 'no errors found')
+      var expected = require(join(__dirname, 'fixtures/05result.json'))
+      t.deepEqual(r, expected, 'merge succeeded')
+      t.end()
+    })
+})
+
 test('README example', function (t) {
   defaults.apiDefaults(
     join(__dirname, 'fixtures/READMEtarget.yaml'),
