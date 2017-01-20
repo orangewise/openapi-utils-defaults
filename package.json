@@ -1,6 +1,6 @@
 {
   "name": "openapi-utils-defaults",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Defaults api parts into an openapi definition",
   "main": "index.js",
   "scripts": {
