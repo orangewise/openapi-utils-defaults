@@ -1,0 +1,7 @@
+a:
+  - name: service a
+    provider: service a provider
+  - name: service b
+    provider: should not be overwritten, not in source
+  - name: service c
+    provider: overwrites service c of source

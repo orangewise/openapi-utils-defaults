@@ -1,0 +1,5 @@
+a:
+  - name: service a
+    provider: service a provider
+  - name: service c
+    provider: service c provider

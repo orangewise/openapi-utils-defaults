@@ -14,6 +14,18 @@ test('defaults 01: properties are added', function (t) {
     })
 })
 
+test('defaults 01b: array', function (t) {
+  defaults.apiDefaults(
+    join(__dirname, 'fixtures/01btarget.yaml'),
+    join(__dirname, 'fixtures/01bsource.yaml'),
+    function (e, r) {
+      t.equal(e, null, 'no errors found')
+      var expected = require(join(__dirname, 'fixtures/01bresult.json'))
+      t.deepEqual(r, expected, 'merge succeeded')
+      t.end()
+    })
+})
+
 test('defaults 02: properties are added', function (t) {
   defaults.apiDefaults(
     join(__dirname, 'fixtures/02target.yaml'),
