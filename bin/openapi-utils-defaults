@@ -7,11 +7,10 @@ var opts = cli.parse()
 if (opts) {
   defaults.apiDefaults(opts.t, opts.s, function (e, r) {
     if (e) {
-      console.log(e)
+      console.error(e)
       process.exit(1)
     } else {
       console.log(JSON.stringify(r))
     }
-  })  
+  })
 }
-
